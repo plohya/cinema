@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cinema_places</title>
+    <link rel="stylesheet" href="./style/style.css">
+</head>
+<body>
+    <div class="container-content">
+        <label>Pick the film:</label>
+
+        <select id="select-film" size="1">
+            <option>unselected</option>
+            <option value="10">The Shawshank Redemption</option>
+            <option value="4">The Green Mile</option>
+            <option value="5">Interstellar</option>
+            <option value="7">Snatch</option>
+        </select>
+    </div>
+        
+        <div>
+            <ul class="legend-list">
+                <li class="legend-list__item">
+                    <div class="describing-text">
+                        Free seats:
+                    </div>
+                    <div class="seat-row__seat"></div>
+                </li>
+
+                <li class="legend-list__item">
+                    <div class="describing-text">
+                        Your choisen seats:
+                    </div>
+                    <div class="seat-row__seat-taken"></div>
+                </li>
+                
+                <li class="legend-list__item">
+                    <div class="describing-text">
+                        Occupied seats:
+                    </div>
+                    <div class="seat-row__seat-occupied"></div>
+                </li>
+            </ul>
+        </div>  
+        
+        <div class="monitor">
+
+        </div> 
+
+        <div id="rows" class="seat-row">
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+        </div>
+
+        <div class="seat-row">
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+        </div>
+
+        <div class="seat-row">
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+        </div>
+
+        <div class="seat-row">
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+        </div>
+
+        <div class="seat-row">
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+        </div>
+
+        <div class="seat-row">
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+        </div>
+
+        <div class="seat-row">
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat-occupied">
+            </div>
+            <div class="seat-row__seat">
+            </div>
+        </div>
+        
+        <div class="message">
+
+        </div>
+
+        <script src="./script/script.js"></script>
+
+</body>
+</html>

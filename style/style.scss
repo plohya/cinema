@@ -1,0 +1,130 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #242333;
+    color: white;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    border-width: 0;
+    overflow: hidden;
+}
+
+select{
+    border: none;
+    outline: none;
+    margin-left: 10px;
+    height: 26px;
+    position: relative;
+
+}
+
+.container-content{
+    margin-top: 10px;
+    user-select: none;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+.legend-list {
+    display: flex;
+    justify-content: space-between;
+    width: 400px;
+    padding-top: 25px;
+    border-radius: 5px;
+    color: #777;
+    
+    &__item{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        pointer-events: none;
+        user-select: none;
+    }
+}
+
+.describing-text{
+    font-size: 16px;
+    color: gray;
+}
+
+.monitor{
+    width:400px;
+    height:200px;
+    background-color:#fff;
+    transform: rotateX(47deg);
+    box-shadow: 0 1px 81px rgb(255 255 255 / 70%);
+    opacity: .8;
+}
+
+.legend-list .seat-row__seat,
+.seat-row__seat-taken .seat-row__seat-occupied{
+  transform: scale(1); 
+}
+
+.legend-list .seat {
+  cursor: default;
+  pointer-events: none;
+}
+
+.seat-row{
+    display: flex;
+    margin-top: 10px;
+
+    &__seat{
+        margin-left: 4px;
+        width: 20px;   
+        height: 18px;
+        border-top-right-radius: 10px;
+        border-top-left-radius: 10px;
+        background-color: #fff;
+        transition: transform .3s ease-in-out;
+        
+        .seat-row &:hover {
+            transform: scale(1.5);
+            border: 2px solid #242533;
+            opacity: .9;
+            cursor: pointer;
+        }
+    
+
+        &-taken{
+            margin-left: 4px;
+            width: 20px;        
+            height: 18px;        
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: lightseagreen;
+        }   
+
+        &-occupied{
+            margin-left: 4px;
+            width: 20px;        
+            height: 18px;        
+            border-top-right-radius: 10px;
+            border-top-left-radius: 10px;
+            background-color: slategray;
+        }
+
+    &:nth-last-of-type(3), &-taken:nth-last-of-type(3), 
+    &:nth-of-type(4), &-taken:nth-of-type(4), 
+    &-occupied:nth-last-of-type(3), &-occupied:nth-of-type(4) {
+        margin-left: 20px;
+    }
+    }
+}
+
+    .message{
+        font-size: 15px;
+        margin-top: 15px;
+        user-select: none;
+    }
